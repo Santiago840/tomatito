@@ -1,0 +1,132 @@
+@font-face {
+  font-family: "Permanent Marker";
+  src: url(./fonts/PermanentMarker.woff) format("woff"),
+    url(./fonts/PermanentMarker.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url(./fonts/Inter.ttf) format("truetype");
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+a {
+  margin: 0;
+
+  font-size: 100%;
+  font-weight: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+/*  */
+.page {
+  background-color: #eee;
+
+  font-family: "Inter", sans-serif;
+}
+
+.header {
+  height: 100vh;
+
+  background-image: url(./images/place.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.overlay {
+  display: flex;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.title {
+  max-width: 1240px;
+
+  margin: auto;
+
+  font-family: "Permanent Marker", sans-serif;
+  font-size: 140px;
+
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 140px;
+
+  color: #fff;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  max-width: 790px;
+
+  margin: 100px auto 50px;
+}
+
+.card {
+  width: 350px;
+
+  margin-bottom: 60px;
+
+  padding: 45px 45px 70px;
+
+  border-radius: 6px;
+
+  background-color: black;
+
+  color: #fff;
+  box-shadow: 5px 5px 5px rgb(121, 119, 119);
+}
+
+.card-title {
+  margin-bottom: 10px;
+
+  font-family: "Permanent Marker", cursive;
+  font-size: 24px;
+}
+
+.card-text {
+  font-size: 16px;
+
+  text-align: justify;
+  letter-spacing: 0.8px;
+  line-height: 0.6cm;
+}
+
+.card-image {
+  width: 100%;
+  height: 200px;
+
+  margin-bottom: 25px;
+
+  object-fit: contain;
+}
+
+.footer {
+  display: flex;
+
+  min-height: 300px;
+
+  background-color: #000;
+}
+
+.author {
+  margin: auto;
+
+  font-size: 24px;
+
+  color: #fff;
+}
